@@ -13,10 +13,10 @@ data class Empresa(
     val id: Int? = null,
 
     @Column(name = "emp_nome", nullable = false)
-    val nome: String = "",
+    var nome: String = "",
 
     @Column(name = "emp_cnpj", nullable = false)
-    val cnpj: String = "",
+    var cnpj: String = "",
 
     @Column(name = "emp_data_cadastro", nullable = false)
     val dataCadastro: LocalDateTime = LocalDateTime.now(),
