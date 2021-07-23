@@ -31,8 +31,9 @@ class EmpresaController(private val empresaService: EmpresaService) {
         empresaService.alterar(alterarEmpresaDTO)
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @ResponseStatus(code = OK)
-    fun deletar() {
+    fun deletar(@PathVariable id: Int) {
+        empresaService.excluir(id)
     }
 }

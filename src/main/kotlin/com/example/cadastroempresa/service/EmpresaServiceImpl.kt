@@ -4,10 +4,10 @@ import com.example.cadastroempresa.dto.AlterarEmpresaDTO
 import com.example.cadastroempresa.dto.CadastroEmpresaDTO
 import com.example.cadastroempresa.dto.ListarEmpresaDTO
 import com.example.cadastroempresa.entity.Empresa
+import com.example.cadastroempresa.exception.NotFoundException
 import com.example.cadastroempresa.mapper.CadastroEmpresaMapper
 import com.example.cadastroempresa.mapper.ListarEmpresaMapper
 import com.example.cadastroempresa.repository.EmpresaRepository
-import javassist.NotFoundException
 import org.springframework.stereotype.Service
 import javax.transaction.Transactional
 
